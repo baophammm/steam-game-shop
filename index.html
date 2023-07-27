@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solution Steam</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <header>
+      <div id= "header-wrapper" class="header-wrapper">
+        <div id="header-logo" class="header-logo header-container">
+          <a href="https://store.steampowered.com/">
+            <img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="100%" height="100%">
+          </a>
+        </div>
+        <div id="header-nav-container" class="nav-container header-container">
+          <div class="nav-item">HOME</div>
+          <a href="https://store.steampowered.com/" class="nav-item nav-item-active">STORE</a>
+          <a href="https://steamcommunity.com/" class="nav-item">COMMUNITY</a>
+          <a href="https://store.steampowered.com/about/" class="nav-item">ABOUT</a>
+          <a href="https://help.steampowered.com/en/" class="nav-item">SUPPORT</a>
+        </div>
+        <div class="global-actions header-container">
+          <div id="global-action-menu">
+            <a href="#" class="header-install-btn global-action-menu-item">
+              <div class="header-install-btn-content">Install Steam</div>
+            </a>
+            <a href="#" class="global-action-link global-action-menu-item">login</a>
+            <div class="pulldown-global-action-link global-action-menu-item">language</div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <main>
+      <div id="store-search" class="store-search main-item">
+        <div id="store-search-box" class="store-search-box">
+          <input type="text" class="search-box-item" id="store-search-form" name="store-search-form" placeholder="Search">
+          <a href="#games" class="search-box-item" id="store-search-button">
+            <img src="https://store.cloudflare.steamstatic.com/public/images/blank.gif">
+          </a>
+        </div>
+      </div>
+      <div id="category-display" class="category-display main-item">
+        <div id="categories-content" class="categories-content">
+          <div id="categories-title" class="categories-title categories-content-item">
+            Browse by Genre
+          </div>
+          <div id="categories-roller" class="categories-roller categories-content-item">
+            <div id="genres-loader-wrapper" style="display: none">
+              <div class="loader">
+                <div class="loader-inner"></div>
+              </div>
+            </div>
+            <div id="roller-container" class="roller-container categories-roller-item">
+              <div id="arrow-left" class="arrow arrow-left roller-container-item">
+                <div></div>
+              </div>              
+              <div id="roller-items" class="roller-items category-navs roller-container-items">
+                <div class="roller-children-row roller-row1 roller-row-hidden ">
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                </div>
+                <div class="roller-children-row roller-row2">
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                </div>
+                <div class="roller-children-row roller-row3 roller-row-hidden">
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                  <div class="category-container">
+                    <div class="category-name"></div>
+                    <div class="category-quantity"></div>
+                  </div>
+                </div>
+                
+              </div>
+              <div id="arrow-right" class="arrow arrow-right roller-container-item">
+                <div></div>
+              </div>
+            </div>
+            <div id="roller-thumbs" class="roller-thumbs categories-roller-item">
+              <div class></div>
+              <div class></div>
+              <div class></div>
+              <div class></div>
+              <div class></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div id="games-display" class="main-item">
+        <div id="games-display-content">
+          <div id="games-title" class="games-display-item">Best of all time</div>
+          <div id="games" class="games-display-item">
+            
+          </div>
+          <div id="games-loader-wrapper" style="display: none">
+            <div class="loader">
+              <div class="loader-inner"></div>
+            </div>
+          </div>
+          <!-- <div id="games-loader" style="display: none"></div>   -->
+        </div>
+      </div>
+      <script src="src/script.js"></script>
+    </main>
+  </body>
+</html>
